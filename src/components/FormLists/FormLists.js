@@ -38,7 +38,7 @@ const FormLists = () => {
                                 formList.map((form, index) =>
                                     <tr>
                                         <th scope="row">{index + 1}</th>
-                                        <td><a href="" onClick={() => handleForm(form._id)}>{form.formName}</a></td>
+                                        <td><Link to="" onClick={() => handleForm(form._id)}>{form.formName}</Link></td>
                                         <td><Link to="/showDetail"  className='btn btn-success btn-sm'>Reports</Link></td>
 
                                     </tr>
