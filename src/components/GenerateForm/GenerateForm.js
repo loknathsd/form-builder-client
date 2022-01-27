@@ -9,7 +9,7 @@ const GenerateForm = () => {
     const [isDate,setIsDate] = useState(false)
  
 
-    const { register, handleSubmit, watch, formState: { errors } } = useForm();
+    const { register, handleSubmit } = useForm();
 
     const history = useHistory()
 

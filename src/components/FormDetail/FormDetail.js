@@ -18,14 +18,14 @@ const FormDetail = () => {
     const history = useHistory()
 
     const { id } = useParams()
-    console.log(id)
+  
     useEffect(() => {
         fetch(`https://arcane-dawn-38623.herokuapp.com/form/${id}`)
             .then(res => res.json())
             .then(data => setForm(data))
-    }, [])
+    }, [id])
 
-    const { register, handleSubmit, watch, formState: { errors } } = useForm();
+    const { register, handleSubmit,  } = useForm();
 
     const onSubmit = data => {
        data[form.date]= value

@@ -1,14 +1,14 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  
 } from "react-router-dom";
 import Navigation from './components/Navigation/Navigation';
 import GenerateForm from './components/GenerateForm/GenerateForm';
-import FormLists from './components/FormLists/FormLists';
+// import FormLists from './components/FormLists/FormLists';
 import Home from './components/Home/Home';
 import FormDetail from './components/FormDetail/FormDetail';
 import ShowDetail from './components/ShowDetail/ShowDetail';
