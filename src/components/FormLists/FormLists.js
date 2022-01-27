@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useEffect } from 'react';
 import { Link, useHistory } from 'react-router-dom';
+import './FormLists.css'
 
 const FormLists = () => {
     const [formList, setFormLists] = useState([])
@@ -38,7 +39,7 @@ const FormLists = () => {
                                 formList.map((form, index) =>
                                     <tr>
                                         <th scope="row">{index + 1}</th>
-                                        <td><Link to="" onClick={() => handleForm(form._id)}>{form.formName}</Link></td>
+                                        <td><h5 className="form-name" onClick={()=> handleForm(form._id)}>{form.formName}</h5></td>
                                         <td><Link to="/showDetail"  className='btn btn-success btn-sm'>Reports</Link></td>
 
                                     </tr>
